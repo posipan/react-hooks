@@ -6,7 +6,7 @@ import {
 import { AppContext } from '../contexts/AppContext';
 import { timeCurrentIso8601 } from '../utils';
 
-const Event = ({ event }) => {
+export const Event = ({ event }) => {
   const { dispatch } = useContext(AppContext);
 
   const id = event.id;
@@ -30,4 +30,3 @@ const Event = ({ event }) => {
     </tr>
   );
 }
-export default Event;

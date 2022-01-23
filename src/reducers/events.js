@@ -1,6 +1,6 @@
 import { CREATE_EVENT, DELETE_ALL_EVENTS, DELETE_EVENT } from "../actions";
 
-const events = (state = [], action) => {
+export const events = (state = [], action) => {
   switch (action.type) {
     case CREATE_EVENT:
       const event = { title: action.title, body: action.body }
@@ -15,4 +15,3 @@ const events = (state = [], action) => {
       return state;
   }
 }
-export default events;
